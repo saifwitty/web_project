@@ -1,0 +1,45 @@
+.profile-container {
+  max-width: 600px;
+  margin: 40px auto;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 16px rgba(0,0,0,0.08);
+  padding: 32px 24px;
+}
+
+.profile-title {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 8px;
+  color: #22223b;
+  text-align: center;
+}
+
+.profile-subtitle {
+  font-size: 1.2rem;
+  color: #4a4e69;
+  margin-bottom: 24px;
+  text-align: center;
+}
+
+.bookings-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.booking-item {
+  background: #f8f9fa;
+  border-radius: 8px;
+  margin-bottom: 16px;
+  padding: 16px 20px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.04);
+  font-size: 1rem;
+  color: #22223b;
+  transition: box-shadow 0.2s;
+}
+
+.booking-item:hover {
+  box-shadow: 0 4px 16px rgba(0,0,0,0.10);
+  background: #e9ecef;
+}
