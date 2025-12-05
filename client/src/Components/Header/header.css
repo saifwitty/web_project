@@ -1,0 +1,155 @@
+/* Reset + Base */
+.header {
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  max-width: 1200px;
+  z-index: 1000;
+  padding: 1rem 2rem;
+  background: rgba(15, 15, 30, 0.85);
+  backdrop-filter: blur(12px);
+  border-radius: 0 0 20px 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+  transition: all 0.4s ease;
+}
+
+.sticky__header {
+  background: rgba(0, 0, 0, 0.95);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.6);
+}
+
+.nav__wrapper {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.bangladesh a {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #00ffff;
+  text-decoration: none;
+  text-shadow: 0 0 8px #00ffff;
+  transition: color 0.3s ease;
+}
+
+.bangladesh a:hover {
+  color: #ffffff;
+  text-shadow: 0 0 12px #ffffff;
+}
+
+.navigation {
+  flex: 1;
+  text-align: center;
+}
+
+.menu {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+}
+
+.nav__item a {
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 1rem;
+  padding: 0.5rem 0.8rem;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.nav__item a:hover,
+.active__link {
+  background: linear-gradient(135deg, #00ffff, #0099ff);
+  color: #000;
+  box-shadow: 0 0 10px #00ffff;
+}
+
+.nav__btns .btn {
+  padding: 0.4rem 1rem;
+  font-size: 0.9rem;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+
+.secondary__btn a,
+.primary__btn a {
+  color: white;
+  text-decoration: none;
+}
+
+.secondary__btn {
+  background-color: transparent;
+  border: 1px solid #00ffff;
+  color: #00ffff;
+}
+
+.secondary__btn:hover {
+  background-color: #00ffff;
+  color: #000;
+}
+
+.primary__btn {
+  background: linear-gradient(135deg, #00ffff, #0099ff);
+  border: none;
+  color: #000;
+  font-weight: bold;
+}
+
+.primary__btn:hover {
+  background: linear-gradient(135deg, #0099ff, #00ffff);
+  box-shadow: 0 0 12px #00ffff;
+}
+
+.logged__in_h5 {
+  color: #00ffff;
+  margin-bottom: 0;
+  font-weight: bold;
+  text-shadow: 0 0 10px #00ffff;
+}
+
+.mobile__menu {
+  display: none;
+  font-size: 1.6rem;
+  cursor: pointer;
+  color: white;
+}
+
+@media screen and (max-width: 768px) {
+  .menu {
+    flex-direction: column;
+    background: rgba(0, 0, 0, 0.95);
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    padding: 1rem;
+    display: none;
+    border-radius: 0 0 20px 20px;
+  }
+
+  .show__menu {
+    display: flex !important;
+  }
+
+  .mobile__menu {
+    display: block;
+  }
+
+  .nav__btns {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .nav__right {
+    flex-direction: row-reverse;
+  }
+}
